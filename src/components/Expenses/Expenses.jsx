@@ -1,6 +1,6 @@
-import Card from "./Card";
+import Card from "../UI/Card";
 import ExpenseItem from "./ExpenseItem";
-import "./Expense.css"
+import "./Expenses.css"
 
 const expense = [
   {title: "Car Insurance", cost: 786, date: new Date(2021, 5, 24)},
@@ -8,7 +8,7 @@ const expense = [
   {title: "Bike", cost: 1542, date: new Date(2022, 6, 29)},
 ]
 
-function Expense() {
+const Expense = () => {
   return (
     <Card className="expense">
       <ExpenseItem title={expense[0].title} amount={expense[0].cost} date={expense[0].date}></ExpenseItem>
