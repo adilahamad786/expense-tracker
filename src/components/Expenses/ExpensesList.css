@@ -1,0 +1,9 @@
+.expenses-list {
+    margin: 0px;
+    padding: 0px;
+}
+
+.empty-message {
+    color: red;
+    text-align: center;
+}

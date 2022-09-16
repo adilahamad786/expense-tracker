@@ -22,8 +22,17 @@
     font-weight: bold;
 }
 
+.new-expense__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    padding-top: 0.7rem;
+    max-width: 50%;
+}
+
 button {
     padding: 0.8rem 1.4rem;
+    margin: 0rem 1rem;
     border-radius: 7px;
     border-style: none;
     text-align: center;

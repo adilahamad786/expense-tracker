@@ -86,6 +86,10 @@ const ExpenseForm = (props) => {
         setEnteredDate('');
     }
 
+    const formStatusHandler = (e) => {
+        props.onFormStatus(false);
+    }
+
     return (
         <form onSubmit={submitHandler}>
             <div className="new-expense__controls">
@@ -101,8 +105,13 @@ const ExpenseForm = (props) => {
                     <label htmlFor="date">Date</label>
                     <input type="date" name="date" min="2019-01-01" max="2022-12-31" value={enteredDate} onChange={dateChangeHandler}/>
                 </div>
-                <div className="new-expense__action">
-                    <button type="submit">Add Expense</button>
+                <div className="new-expense__actions">
+                    <div className="new-expense__action">
+                        <button onClick={formStatusHandler}>Cancel</button>
+                    </div>
+                    <div className="new-expense__action">
+                        <button type="submit">Add Expense</button>
+                    </div>
                 </div>
             </div>
         </form>
