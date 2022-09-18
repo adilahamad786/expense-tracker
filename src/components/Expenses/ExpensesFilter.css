@@ -1,7 +1,8 @@
 .expense-filter {
     font-size: 1.1rem;
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 0rem 1rem;
+    padding-top: 0.8rem;
     word-spacing: 0.1rem;
 }
 

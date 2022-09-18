@@ -1,0 +1,28 @@
+.chartbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4%;
+    height: 10rem;
+}
+
+.chartbar-box {
+    display: flex;
+    width: 50%;
+    background-color: rgb(153, 135, 196);
+    border-radius: 12px;
+    height: 8rem;
+    border: 1px solid rgb(56, 56, 117);
+    overflow: hidden;
+}
+
+.chartbar-filler {
+    align-self:flex-end;
+    justify-self: center;
+    margin: 0px;
+    padding: 0px;
+    height: 50%;
+    width: 100%;
+    background-color: rgb(73, 1, 206);
+}
