@@ -1,4 +1,4 @@
-.chartbar-container {
+.chart-bar{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,7 +7,7 @@
     height: 10rem;
 }
 
-.chartbar-box {
+.chart-bar__inner {
     display: flex;
     width: 50%;
     background-color: rgb(153, 135, 196);
@@ -17,12 +17,15 @@
     overflow: hidden;
 }
 
-.chartbar-filler {
-    align-self:flex-end;
-    justify-self: center;
-    margin: 0px;
-    padding: 0px;
-    height: 50%;
+.chart-bar__fill {
+    align-self: flex-end;
     width: 100%;
     background-color: rgb(73, 1, 206);
+    transition: all 0.3s ease-out;
+}
+
+.char-bar__label {
+    padding-top: 0.3rem;
+    font-size: 0.7rem;
+    font-weight: bold;
 }
